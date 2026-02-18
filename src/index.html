@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Responsive Job Application Form </title>
+</head>
+<body class="min-h-screen bg-slate-50 flex justify-center items-center py-12">
+    <form action="" class=" bg-white  shadow-xl rounded-2xl max-w-4xl w-full  overflow-hidden text-slate-900 text-sm">
+        <header class="text-white bg-cyan-700 flex items-center space-x-3 p-4">
+            <div class="">
+                <i class="fa-solid fa-briefcase text-2xl"></i>
+            </div>
+            <div>
+                <h1 class="text-2xl">Job Application Form</h1>
+                <p class="text-cyan-100">Please fill out all required fields to complete your application</p>
+            </div>
+        </header>
+        <div class="p-4">
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-user mr-2 text-cyan-600"></i>Personal Information</h2>
+                <div class="form-div">
+                    <div class="form-flexDiv">
+                        <div class="flex flex-col group flex-1">
+                            <label for="firstName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required class="form-input">
+                        </div>
+                         <div class="flex flex-col group flex-1">
+                            <label for="lastName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-flexDiv">
+                        <div class="flex flex-col group flex-1">
+                            <label for="email" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required class="form-input">
+                        </div>
+                        <div class="flex flex-col group flex-1">
+                            <label for="phoneNumber" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(555)123-4567" required class="form-input">
+                        </div>
+                    </div>
+                    <div class="flex flex-col group">
+                        <label for="address" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Street Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main Street" required class="form-input">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3.5 md:grid-cols-3">
+                        <div class="flex flex-col group">
+                        <label for="stateName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Province/State</label>
+                        <input type="text" id="stateName" name="stateName" placeholder="NY" required class="form-input">
+                    </div>
+                    <div class="flex flex-col group">
+                        <label for="cityName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">City</label>
+                        <input type="text" id="cityName" name="cityName" placeholder="New York" required class="form-input">
+                    </div>
+                    <div class="flex flex-col group col-span-2 md:col-span-1">
+                        <label for="zipCode" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Zip Code</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="123" required class="form-input">
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-briefcase mr-2 text-cyan-600"></i>Position Information</h2>
+                <div class="form-div">
+                     <div class="flex flex-col group">
+                        <label for="position" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Position Applied for</label>
+                        <input type="text" id="position" name="position" placeholder="e.g. Senior Software Engineer" required class="form-input">
+                    </div>
+                    <div class="flex flex-col group">
+                        <label for="department" class="text-slate-700 font-medium group-has-required:after:content-['*']">Department</label>
+                        <select name="department" id="department" required class="form-select" >
+                            <option value="" disabled selected>Select a department</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                            <option value="design">Design</option>
+                            <option value="human resources">Human Resources</option>
+                            <option value="finance">Finance</option>
+                            <option value="operations">Operations</option>
+                            <option value="customer service">Customer Service</option>
+                        </select>
+                    </div>
+                     <div class="flex flex-col group">
+                        <label for="employmentType" class="text-slate-700 font-medium group-has-required:after:content-['*']">Employment Type</label>
+                        <select name="employmentType" id="employmentType" required class="form-select" >
+                            <option value="" disabled selected>Select employment type</option>
+                            <option value="full-time">Full-time</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                        </select>
+                    </div> 
+                      <div class="flex flex-col group">
+                        <label for="expectedSalary" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Expected Salary</label>
+                        <input type="text" id="expectedSalary" name="expectedSalary" placeholder="e.g. $80,000 - $100,000" class="form-input">
+                    </div>
+                      <div class="flex flex-col group">
+                        <label for="startDate" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Available Start Date</label>
+                        <input type="date" id="startDate" name="startDate" required class="form-input">
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-briefcase mr-2 text-cyan-600"></i>Work Experience</h2>
+                <div class="form-div">
+                    <div class="flex flex-col group">
+                        <label for="companyName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Current/Most Recent Company</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="Company Name" class="form-input">
+                    </div>
+                     <div class="flex flex-col group">
+                        <label for="jobTitle" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Current/Most Recent Position</label>
+                        <input type="text" id="jobTitle" name="jobTitle" placeholder="Job Title" class="form-input">
+                    </div>
+                    <div class="flex flex-col group">
+                        <label for="yearsOfExperience" class="text-slate-700 font-medium group-has-required:after:content-['*']">Total Years of Experience</label>
+                        <select name="yearsOfExperience" id="yearsOfExperience" required class="form-select" >
+                            <option value="" disabled selected>Select total years of experience</option>
+                            <option value="0-1">0-1 years</option>
+                            <option value="1-3">1-3 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5-10">5-10 years</option>
+                            <option value="+10">+10 years</option>
+                        </select>
+                    </div> 
+                      <div class="flex flex-col group">
+                        <label for="workExperience" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Work Experience Details</label>
+                        <textarea type="text" id="workExperience" name="workExperience" placeholder="Describe your relevant work experience" rows="8" class="form-input resize-none"></textarea>
+                        <p class="font-light pt-1.5 text-slate-500 group-has-focus:text-slate-900">Include key achievements and responsibilities</p>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-graduation-cap mr-2 text-cyan-600"></i>Education</h2>
+                <div class="form-div">
+                    <div class="form-flexDiv">
+                        <div class="flex flex-col group flex-1">
+                        <label for="education" class="text-slate-700 font-medium group-has-required:after:content-['*']">Highest Level of Education</label>
+                        <select name="education" id="education" required class="form-select" >
+                            <option value="" disabled selected>Select highest level of education</option>
+                            <option value="high-school">High School</option>
+                            <option value="associate">Associate Degree</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">ph.D.</option>
+                            <option value="other">Other</option>
+                        </select>
+                        </div> 
+                        <div class="flex flex-col group flex-1">
+                        <label for="studyField" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Field of Study</label>
+                        <input type="text" id="studyField" name="studyField" placeholder="e.g. Computer Science" required class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-flexDiv">
+                        <div class="flex flex-col group flex-1">
+                        <label for="university" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">University/Institution</label>
+                        <input type="text" id="university" name="university" placeholder="University Name" required class="form-input">
+                        </div>
+                        <div class="flex flex-col group flex-1">
+                        <label for="graduationYear" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Graduation Year</label>
+                        <input type="text" id="graduationYear" name="graduationYear" placeholder="2020" required class="form-input">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-circle-check mr-2 text-cyan-600"></i>Skills & Certifications</h2>
+                <div class="form-div">
+                 <div class="flex flex-col group">
+                        <label for="skills" class="text-slate-700 font-medium group-has-required:after:content-['*']">Key Skills</label>
+                        <textarea type="text" id="skills" name="skills" required placeholder="e.g. JavaScript, React..." rows="8" class="form-input resize-none"></textarea>
+                        <p class="font-light pt-1.5 text-slate-500 group-has-focus:text-slate-900">List your key skills separated by commas</p>
+                </div>
+                <div class="flex flex-col group">
+                        <label for="certifications" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Certifications</label>
+                        <textarea type="text" id="certifications" name="certifications" placeholder="List any relevant certifications..." rows="8" class="form-input resize-none"></textarea>
+                        <p class="font-light pt-1.5 text-slate-500 group-has-focus:text-slate-900">Optional</p>
+                </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-file-lines mr-2 text-cyan-600"></i>Additional Information</h2>
+                <div class="form-div">
+                  <div class="flex flex-col group">
+                        <label for="letter" class="text-slate-700 font-medium group-has-required:after:content-['*']">Cover Letter</label>
+                        <textarea type="text" id="letter" name="letter" minlength="100" required placeholder="Tell us why you're interested..." rows="8" class="form-input resize-none peer"></textarea>
+                        <p class="font-light pt-1.5 text-slate-500 group-has-focus:text-slate-900 peer-invalid:text-rose-500">Minimum 100 characters</p>
+                  </div>
+                  <div class="form-flexDiv">
+                     <div class="flex flex-col group flex-1">
+                        <label for="LinkedIn" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">LinkedIn Profile</label>
+                        <input type="url" id="LinkedIn" name="linkedIn" placeholder="https://linkedIn.com/in/yourprofile" class="form-input">
+                        </div>
+                        <div class="flex flex-col group flex-1">
+                        <label for="portfolio" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Portfolio Website</label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" class="form-input">
+                        </div>
+                  </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-user mr-2 text-cyan-600"></i>Professional Reference</h2>
+                <div class="form-div">
+                    <div class="form-flexDiv">
+                        <div class="flex flex-col group flex-1">
+                        <label for="referenceName" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Reference Name</label>
+                        <input type="text" id="referenceName" name="referenceName" placeholder="Full Name" class="form-input">
+                        </div>
+                        <div class="flex flex-col group flex-1">
+                        <label for="referenceEmail" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Reference Email</label>
+                        <input type="email" id="referenceEmail" name="referenceEmail" placeholder="email@example.com" class="form-input">
+                        </div>
+                    </div>
+                    <div class="flex flex-col group flex-1">
+                        <label for="referencePhone" class="text-slate-700 font-medium group-has-[input:required]:after:content-['*']">Reference Phone</label>
+                        <input type="tel" id="referencePhone" name="referencePhone" placeholder="(555) 123-4567" class="form-input">
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2 class="text-xl mt-4 mb-10"><i class="fa-solid fa-file-lines mr-2 text-cyan-600"></i>Legal Information</h2>
+                <div class="form-div">
+                  <div class="form-flexDiv">
+                    <div class="flex flex-col group flex-1">
+                        <label for="authorized" class="text-slate-700 font-medium group-has-required:after:content-['*']">Are you authorized to work in this country?</label>
+                        <select id="authorized" name="authorized" required class="form-select">
+                            <option value="" disabled selected>Select are you authorized to work in this country?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="visa">Visa Sponsorship Required</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col group flex-1">
+                        <label for="criminalRecord" class="text-slate-700 font-medium group-has-required:after:content-['*']">Have you ever been convicted of a crime?</label>
+                        <select id="criminalRecord" name="criminalRecord"  required class="form-select">
+                            <option value="" disabled selected>Select have you ever been convicted of a crime?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <p class="font-light pt-1.5 text-slate-500">A conviction will not necessarily disqualify you</p>
+                    </div>
+
+                  </div>
+                </div>
+            </section>
+        </div>
+        <footer class="flex p-4 justify-around mb-8">
+            <button type="reset" name="resetBtn" class="form-btn outline-2 outline-cyan-700 text-cyan-700  hover:bg-cyan-700 hover:text-white">Clear All</button>
+            <button type="submit" name="submitBtn" class="form-btn bg-cyan-700 text-white ">Submit Application</button>
+        </footer>
+    </form>  
+</body>
+<script src="https://kit.fontawesome.com/20d70fe545.js" crossorigin="anonymous"></script>
+</html>
