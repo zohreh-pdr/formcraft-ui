@@ -19,7 +19,7 @@ https://zohreh-pdr.github.io/formcraft-ui
 
 ##  Screenshots
 
-![Screenshot from Form Craft] (./images/Screenshot-form-craft.png)
+![Screenshot from Form Craft](./images/Screenshot-form-craft.png)
 
 
 
